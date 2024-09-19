@@ -3,11 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
-    mode: "development",
+    mode: "production", // Set mode to production
     entry: "./src/main.ts",
     output: {
         path: path.resolve(__dirname, 'dist'), // Output to 'dist' directory
-        filename: "main.built.js"
+        filename: "main.built.js" // The built JS file
     },
     resolve: {
         extensions: [".ts", ".tsx", ".js"]

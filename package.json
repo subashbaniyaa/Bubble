@@ -11,6 +11,7 @@
   "author": "Subash Baniya",
   "license": "ISC",
   "devDependencies": {
+    "@vercel/static-build": "^2.5.24",
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.2.2",
     "css-loader": "^3.4.0",
