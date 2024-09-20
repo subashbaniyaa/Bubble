@@ -51,5 +51,8 @@ module.exports = {
             }
         ]
     },
-    plugins: [HTMLWebpackPluginConfig, BrowserSyncPluginConfig]
+    plugins: [
+      HTMLWebpackPluginConfig,
+      ...(process.env.NODE_ENV === 'development' ? [BrowserSyncPluginConfig] : [])
+    ]
 };
