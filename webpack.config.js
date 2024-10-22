@@ -1,4 +1,5 @@
 /* Configure HTMLWebpack plugin */
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
     template: __dirname + '/src/index.html',
